@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ARG GO_VERSION=1.20
+ARG GO_VERSION=1.25
 FROM golang:${GO_VERSION} as install
 
 ARG LICHEN_VERSION=v0.1.7
