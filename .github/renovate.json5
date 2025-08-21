@@ -20,6 +20,12 @@
   },
 
   packageRules: [
+    // Limiting Docker updates to certain path
+    {
+      matchManagers: ["dockerfile"],
+      enabled: false,
+    },
+
     {
       matchManagers: ["dockerfile"],
       matchFileNames: ["images/toolbox/*"],
